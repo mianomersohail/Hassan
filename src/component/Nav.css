@@ -1,0 +1,143 @@
+:root {
+    --main-bg-color: #232323;
+    --primary-color: #ff5722;
+    --secondary-color: #4caf50;
+    --yellow-color: #FFE379;
+    --font-size-large: 18px;
+}
+
+nav {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Center the nav items */
+    text-align: center; /* Center the text inside the nav */
+}
+
+.navbar-nav .nav-item {
+    position: relative; /* Needed for dropdown positioning */
+    padding: 0 15px; /* Add some space between nav items */
+    
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Set the color of the nav items to white */
+    font-weight: light;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--yellow-color); /* Change color on hover */
+}
+
+/* Dropdown Menu */
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--main-bg-color);
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-item:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Submenu Dropdown (Blogs +) */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Align to the right of the parent item */
+    background-color: var(--main-bg-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu .dropdown-item {
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--yellow-color);
+    color: var(--main-bg-color);
+}
+
+/* Hamburger Icon Color */
+.navbar-toggler-icon {
+    background-color: var(--yellow-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-brand {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar-brand {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    
+    .btn-nav-contact {
+        border: solid;
+        padding: 15px 5px;
+        width: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--yellow-color);
+        margin-right: 10px;
+        color: black;
+        font-weight: bolder;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        
+    }
+
+    .btn-nav-contact:hover {
+        background-color: var(--main-bg-color);
+        color: white;
+        transform: scale(0.88);
+        border-width: 0.1ch;
+        border-color: var(--yellow-color);
+    }
+}
+@media screen and (max-width:992px) {
+    .btn-contact-main{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
