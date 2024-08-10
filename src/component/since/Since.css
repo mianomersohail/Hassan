@@ -1,0 +1,45 @@
+.main-since{
+    background-color: #101010;
+    color:white;
+}
+.since{
+    padding:150px 0px 150px 0px;
+}
+.since-h5-one{
+    margin-top: 2rem;
+}
+.since-name{
+    margin-top: 4rem;
+}
+.since-img img{
+    width: 100%;
+    
+}
+.since-box{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.since-2004{
+    color:var(--yellow-color)
+}
+.since-bold{
+    font-weight: bolder;
+
+}
+.since-p-one{
+    color:#616770;
+    margin-top: 1rem;
+}
+.since-editor{
+    color:var(--yellow-color)
+}
+@media screen and (max-width:1200px){
+    .since-img{
+        margin-top: 5rem;
+    }
+    .since{
+        padding: 100px 0px 100px 0px;
+    }
+}

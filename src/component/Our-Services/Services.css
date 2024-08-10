@@ -60,3 +60,16 @@ align-items: center;
 }
 
 }
+@media screen and (max-width:567px) {
+    .service-box-flex{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:185px) {
+    .service-box-1 p{
+        margin-left: 0rem;
+
+    }
+    
+}
