@@ -1,0 +1,62 @@
+.service-box{
+    margin-top: 5rem;
+}
+.service-box-2{
+    margin-top: 3rem;
+}
+.service-box-flex{
+display: flex;
+
+align-items: center;
+}
+.service-box-1 img{
+    width: 59px;
+}
+.service-box-1 h4{
+    font-weight: bolder;
+}
+.service-box-1 p{
+    margin-left: 4rem;
+    color:#616770;
+}
+.services{
+    
+    background-color: #101010;
+    color:white;
+    padding:100px 0px 100px 0px;
+}
+.amazing-services h1{
+    font-weight: bolder;
+    
+    
+}
+.amazing-services {
+    opacity: 0;
+    transform: translateX(100vw); /* Start off-screen to the right */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .amazing-services.in-view {
+    opacity: 1;
+    transform: translateX(0); /* Move to its normal position */
+  }
+  
+  
+  
+.amazing-services p{
+    color:#616770;
+}
+.amazing-services-firstp{
+    color:var(--yellow-color) !important;
+}
+.services-btn{
+    margin-top: 2rem;
+}
+@media screen and (max-width:1020px) {
+.services{
+    display: flex;
+    flex-direction:column-reverse;
+    
+}
+
+}
