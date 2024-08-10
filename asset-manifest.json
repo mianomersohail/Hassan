@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mianomersohail/Hassan.git/static/css/main.746c7057.css",
+    "main.js": "/mianomersohail/Hassan.git/static/js/main.e11b542d.js",
+    "static/js/453.ed3810f9.chunk.js": "/mianomersohail/Hassan.git/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/mianomersohail/Hassan.git/index.html",
+    "main.746c7057.css.map": "/mianomersohail/Hassan.git/static/css/main.746c7057.css.map",
+    "main.e11b542d.js.map": "/mianomersohail/Hassan.git/static/js/main.e11b542d.js.map",
+    "453.ed3810f9.chunk.js.map": "/mianomersohail/Hassan.git/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.746c7057.css",
+    "static/js/main.e11b542d.js"
+  ]
+}
