@@ -27,8 +27,7 @@ align-items: center;
 }
 .amazing-services h1{
     font-weight: bolder;
-    
-    
+    font-family:  Arial;
 }
 .amazing-services {
     opacity: 0;

@@ -20,6 +20,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateX(-100%); /* Initial off-screen position */
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out; 
+}
+.since-box.scrolled {
+    transform: translateX(0); /* Final position */
+    opacity: 1;
 }
 .since-2004{
     color:var(--yellow-color)

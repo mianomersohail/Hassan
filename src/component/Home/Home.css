@@ -1,0 +1,114 @@
+.home-img-background {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/3241951/pexels-photo-3241951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */
+    height: 110vh;
+    width: 100%;
+  }
+  
+  .home-img-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black; /* Adjust color as needed */
+    opacity: 0.6;
+    z-index: 1; /* Place it behind the content */
+  }
+  
+  .Home-Main {
+    position: relative;
+    z-index: 2; /* Ensure content is on top of the overlay */
+    height: 100%;
+    width: 100%;
+  }
+  
+  .Main-img-two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Place it above Home-Main */
+    width: 100%;
+    padding: 20px; /* Add some padding if needed */
+  }
+  
+  .home-img-two {
+    width: 100%;
+    height: auto;
+  }
+  
+  .home-btn {
+    border: solid;
+    padding: 5px 5px;
+    width: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-color);
+    margin-right: 10px;
+    color: black;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  
+  .home-btn:hover {
+    background-color: var(--main-bg-color);
+    color: white;
+    transform: scale(0.88);
+    border-width: 0.1ch;
+    border-color: var(--yellow-color);
+  }
+  
+  .home-cool {
+    font-weight: bolder;
+    font-size: 73px;
+    color: white;
+  }
+  
+  .home-img-two-main {
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+  }
+  .Main-img-two{
+   
+   
+  }
+  .home-p{
+    color:#DAEAE1;
+  }
+  @media screen and (max-width:1200px) {
+    .home-img-background{
+        height:100vh;
+    }
+    
+  }
+  @media screen and (max-width:1200px) {
+    .home-img-two{
+        
+        display: none;
+    }
+    .home-cool{
+        font-size: 32px;
+    }
+    
+  }
+  @media screen and (max-width:567px) {
+    .home-p{
+        text-align: center;
+    }
+    
+  }
+  .Main-img-two{
+   
+    height: 50%
+  }
