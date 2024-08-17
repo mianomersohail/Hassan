@@ -1,6 +1,7 @@
 import "./Nav.css";
-
+import {Link} from 'react-router-dom'
 function Nav() {
+  
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -24,14 +25,14 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
+                <Link to="home" className="nav-link " aria-current="page" href="#">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="about" className="nav-link">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link" href="#">
@@ -106,9 +107,9 @@ function Nav() {
               </li>
             </ul>
             <form className="d-flex btn-contact-main" role="search">
-              <div className="btn-nav-contact" type="submit">
+              <Link to="/contact" className="btn-nav-contact"  type="submit">
                 CONTACT US
-              </div>
+              </Link>
             </form>
           </div>
         </div>

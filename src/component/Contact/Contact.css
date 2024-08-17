@@ -1,0 +1,16 @@
+.About-contact{
+    background-image: url('https://media.istockphoto.com/id/1439226110/photo/reflection-of-the-lights-and-the-mountain-in-a-lake-captured-in-parco-ciani-lugano-switzerland.jpg?s=1024x1024&w=is&k=20&c=k7CMGV-sHFPz2TuxSxqFnuuH4MZyt8WxJBL2dODF7Uw=');
+    height: 80vh;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-img{
+    width: 100px;
+}

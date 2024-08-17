@@ -1,13 +1,16 @@
 import "./Home.css";
-
+import Portfolio from '../Portfolio/Portfolio'
+import Since from "../since/Since.js";
+import Services from "../Our-Services/Services.js";
+import Pricing from "../Pricing/Pricing.js";
+import Promotion from "../promotion/Promotion.js";
+import Footer from "../Footer.js/Footer.js";
 export default function Home() {
   return (
     <>
       <div className="container-fluid home-img-background">
         <div className="Home-Main">
-          <div className="row">
-            {/* Additional content can go here */}
-          </div>
+          <div className="row">{/* Additional content can go here */}</div>
         </div>
       </div>
       <div className="container Main-img-two">
@@ -24,13 +27,19 @@ export default function Home() {
           <div className="col-lg-6">
             <div className="home-box">
               <div>
-                <p style={{ color: '#FFE379' }}>WELCOME TO VIDEEN STUDIO</p>
+                <p style={{ color: "#FFE379" }}>WELCOME TO VIDEEN STUDIO</p>
               </div>
               <div>
-                <h1 className="home-cool">LET'S MAKE YOUR VIDEO LOOK MORE COOL​</h1>
+                <h1 className="home-cool">
+                  LET'S MAKE YOUR VIDEO LOOK MORE COOL​
+                </h1>
               </div>
               <div>
-                <p className="home-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <p className="home-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
               </div>
               <div>
                 <div className="home-btn">Get Started</div>
@@ -39,6 +48,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Portfolio/>
+      <Since/>
+      <Services/>
+      <Pricing/>
+      <Promotion/>
+      <Footer/>
     </>
   );
 }

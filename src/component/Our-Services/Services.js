@@ -28,11 +28,11 @@ export default function Services() {
     <>
       <div className="container-fluid">
         <div className="row services">
-          <div className="col-md-3 service-box">
+          <div className="col-lg-3 service-box">
             <div className="service-box-1">
               <div className="service-box-flex">
                 <span>
-                  <img src="https://estherchongrealtygroup.com/wp-content/uploads/2023/06/5gold.png" />
+                  <img src="https://majidstudios.com/wp-content/uploads/2023/09/content-marketing-300x300.png" />
                 </span>
                 <span>
                   <h4>Company Profile</h4>
@@ -46,7 +46,7 @@ export default function Services() {
             <div className="service-box-1 service-box-2">
               <div className="service-box-flex">
                 <span>
-                  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiIL54UnzEfjNsNbNBKIqcCYKImnOpvWPDMRwnQ586r5oZz4aK" />
+                  <img src="https://majidstudios.com/wp-content/uploads/2023/09/video-camera-300x300.png" />
                 </span>
                 <span>
                   <h4>Branding Mode</h4>
@@ -58,11 +58,11 @@ export default function Services() {
               </p>
             </div>
           </div>
-          <div className="col-md-3 service-box">
+          <div className="col-lg-3 service-box">
             <div className="service-box-1">
               <div className="service-box-flex">
                 <span>
-                  <img src="https://img.freepik.com/premium-vector/geometric-shapes-background-design_811396-237.jpg?w=826" />
+                  <img src="https://majidstudios.com/wp-content/uploads/2023/09/buyer-300x300.png" />
                 </span>
                 <span>
                   <h4>Wedding Session</h4>
@@ -76,7 +76,7 @@ export default function Services() {
             <div className="service-box-1 service-box-2">
               <div className="service-box-flex">
                 <span>
-                  <img src="https://www.chefoncalldelivery.com/latest/wp-content/uploads/2016/08/pictogram-smartphone.png" />
+                  <img src="https://majidstudios.com/wp-content/uploads/2023/09/film-reel-300x300.png" />
                 </span>
                 <span>
                   <h4>Entertainer</h4>
@@ -101,7 +101,9 @@ export default function Services() {
               Cras auctor tempus mattis. Proin convallis turpis sed aliquam
               dignissim. Vivamus eleifend velit ac lobortis fringilla.
             </p>
+            <div className="service-btn-main">
             <div className="btn-nav-contact services-btn">VIEW SERVICES</div>
+          </div>
           </div>
         </div>
       </div>

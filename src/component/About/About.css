@@ -1,0 +1,152 @@
+.About-background {
+    background-image: url('https://majidstudios.com/wp-content/uploads/2023/09/silhouette-photographer-who-shoots-sunset-mountains-1-e1697248838149.jpg');
+    height: 80vh;
+    
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-opacity {
+    background-color: black;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+   
+    z-index: 1;
+}
+
+.About-two {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-flex h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Oswald, sans-serif;
+    margin-left: 1rem;
+    text-align: center;
+    line-height: 61px;
+}
+
+.About-home {
+    margin-left: 1rem;
+    color: #FFE379;
+}
+
+@media screen and (max-width: 768px) {
+    .about-flex {
+        flex-direction: column;
+    }
+    .About-background {
+        background-position: right;
+    }
+    .About-two {
+        left: 50%;
+    }
+   
+}
+.about-owner-img{
+    width: 100%;
+}
+.Owner{
+    padding:0px;
+    padding-top: 100px;
+    background-color: black;
+    color:white;
+}
+.about-filling{
+    border:1px solid white;
+    width: 79%;
+    display: flex;
+
+
+}
+.about-filling-container {
+    position: relative;
+    height: 30px; /* Height of the filling bar */
+    margin-bottom: 10px; /* Space between each filling bar */
+  }
+  
+  .about-filling {
+    position: relative;
+    background-color: #e0e0e0; /* Background color of the container */
+    border-radius: 25px; /* Rounded corners */
+    height: 100%; /* Full height of the container */
+    overflow: hidden;
+  }
+  
+  .about-filling-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #FFE379; /* Color of the filling */
+    border-radius: 25px;
+    width: 0; /* Start with 0 width */
+    transition: width 2s ease-in-out; /* Transition effect */
+  }
+  
+  .about-filling .fixed-text {
+    position: absolute;
+    top: 0;
+    left: 10px; /* Space from the left edge */
+    line-height: 30px; /* Center vertically in the bar */
+    color: black;
+    z-index: 1; /* Make sure it is above the filling bar */
+  }
+  
+  .about-filling .moving-text {
+    position: absolute;
+    top: 0;
+    line-height: 30px;
+    color: black;
+    z-index: 1; /* Make sure it is above the filling bar */
+  }
+  
+  .filled-70 .about-filling-bar {
+    width: 70%; /* Fill for 70% */
+  }
+  
+  .filled-80 .about-filling-bar {
+    width: 80%; /* Fill for 80% */
+  }
+  
+  .filled-90 .about-filling-bar {
+    width: 90%; /* Fill for 90% */
+  }
+  
+  .filled-70 .moving-text {
+    left: 70%; /* Position the moving text for 70% */
+    transform: translateX(-100%); /* Center the text on the fill */
+  }
+  
+  .filled-80 .moving-text {
+    left: 80%; /* Position the moving text for 80% */
+    transform: translateX(-100%); /* Center the text on the fill */
+  }
+  
+  .filled-90 .moving-text {
+    left: 90%; /* Position the moving text for 90% */
+    transform: translateX(-100%); /* Center the text on the fill */
+  }
+  .about-filling-container{
+    margin-top: 3rem;
+  }
+  

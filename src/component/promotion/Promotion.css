@@ -1,0 +1,94 @@
+.promotion-img-background {
+    background-image: url('https://images.pexels.com/photos/3784566/pexels-photo-3784566.jpeg?auto=compress&cs=tinysrgb&w=600');
+    position: relative;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+}
+
+.promotion-img-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.promotion-container-up {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half of its width and height */
+    z-index: 2;
+    color: white; /* Ensure text is visible over background */
+}
+.promotion-explore {
+    font-weight: bolder;
+    color: white; /* Adjust to ensure visibility */
+    font-size: 43px;
+    text-align: center; /* Center text within its container */
+}
+
+.promotion-btn {
+    border: solid;
+    padding: 5px 5px;
+    width: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-color);
+    margin-right: 10px;
+    color: black;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: Raleway, sans-serif;
+    line-height: 32px;
+}
+
+.promotion-btn:hover {
+    background-color: var(--main-bg-color);
+    color: white;
+    transform: scale(0.88);
+    border-width: 0.1ch;
+    border-color: var(--yellow-color);
+}
+.promotion-flex{
+    display: flex;
+    justify-content: center;
+}
+.promotion-explore{
+    text-align: center;
+    font-size: 54px;
+}
+@media screen and (max-width:1200px) {
+    .promotion-img-background{
+        height:140vh;
+        background-size: contain;
+    }
+    
+    .promotion-explore{
+        font-size: 32px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1200px) {
+    .promotion-img-background{
+        height:140vh;
+        background-size: cover; /* Keep the image covering the container */
+    }
+    
+    .promotion-explore{
+        font-size: 32px;
+        text-align: center;
+    }
+}

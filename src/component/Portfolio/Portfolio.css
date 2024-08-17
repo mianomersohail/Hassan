@@ -16,8 +16,8 @@ align-items: center;
     color:#7D7569;
 }
 .PORTFOLIO{
-    border:solid;
-    padding: 100px 0px 100px 0px;
+   
+    padding: 100px 20px 100px 20px;
      background-color: #101010;
 }
 .portfolio-img-one{
@@ -39,5 +39,8 @@ align-items: center;
     }
  .portfolio-other-p{
     text-align: center;
- }   
+}
+.portfolio-video-container{
+    display: none;
+}
 }

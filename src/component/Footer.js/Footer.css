@@ -106,3 +106,12 @@
         margin-left: 0rem;
     }
 }
+@media screen and (max-width:567px){
+    .footer-copy-right{
+        text-align: center;
+    }
+    .footer-p{
+        text-align: center;
+    }
+    
+}
